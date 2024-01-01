@@ -1,6 +1,7 @@
 package kr.co.manty.gfsd_spring_boot_ex1.student;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class StudentService {
@@ -16,6 +17,7 @@ public class StudentService {
                 .orElseThrow(() -> new StudentNotFoundException(id));
     }
 
+    @Transactional
     public void registerStudent(Student student) {
         studentRepository.save(student);
     }
