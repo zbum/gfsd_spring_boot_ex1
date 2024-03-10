@@ -14,14 +14,14 @@ public class StudentController {
     }
 
     @GetMapping("/{student-id}")
-    public Student retrieveStudent(@PathVariable("student-id") Long id) {
-        return studentService.getStudent(id);
+    public StudentResponse retrieveStudent(@PathVariable("student-id") Long id) {
+        return StudentResponse.from(studentService.getStudent(id));
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Student registerStudent(@RequestBody Student student) {
+    public StudentResponse registerStudent(@RequestBody Student student) {
         studentService.registerStudent(student);
-        return student;
+        return StudentResponse.from(student);
     }
 }
