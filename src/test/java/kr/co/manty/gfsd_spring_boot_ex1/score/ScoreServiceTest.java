@@ -1,4 +1,4 @@
-package kr.co.manty.gfsd_spring_boot_ex1.course;
+package kr.co.manty.gfsd_spring_boot_ex1.score;
 
 import kr.co.manty.gfsd_spring_boot_ex1.student.Student;
 import org.assertj.core.api.Assertions;
@@ -9,7 +9,6 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.BDDMockito.given;
 
 @SpringBootTest

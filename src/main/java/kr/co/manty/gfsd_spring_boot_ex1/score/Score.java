@@ -1,4 +1,4 @@
-package kr.co.manty.gfsd_spring_boot_ex1.course;
+package kr.co.manty.gfsd_spring_boot_ex1.score;
 
 
 import jakarta.persistence.*;
